@@ -12,9 +12,9 @@ Para o desenvovimento serão inicialmente utilizados tecnologias como Docker, Or
 - **Estrutura de arquivos**
 
   ~~~text
-   database/               # Banco de dados Oracle
-  ├── docker-compose.yml   # Compose individual do banco
-  └── scripts/             # Scripts de criação dos objetos no banco
+   database/              # Banco de dados Oracle
+  ├── docker-compose.yml  # Compose individual do banco
+  └── scripts/            # Scripts de criação dos objetos no banco
   ~~~
 
 ### 1.1 Executar `docker-compose.yml`
@@ -33,3 +33,16 @@ Para o desenvovimento serão inicialmente utilizados tecnologias como Docker, Or
 - Para facilitar a configuração da base foram criadas arquivo .bat que percorrem o conteudo da pasta scripts e fazem a execução no docker *basta executar os bat na ordem numérica: 001, 002*
 
 ---
+
+## Etapa 2: Criação da API
+
+- Documentação interativa (Swagger): `http://localhost:8000/docs`
+
+- **Estrutura de arquivos**
+
+  ~~~text
+   api/               # Banco de dados Oracle
+  ├── docker-compose.yml  # Compose individual do banco
+  ├── Dockerfile          # Instruções e comandos para criar container python e dependências
+  └── scripts/            # Scripts de criação dos objetos no banco
+  ~~~
